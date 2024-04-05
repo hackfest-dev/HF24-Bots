@@ -31,7 +31,7 @@ const HomeInfo = ({ currentStage }) => {
           🌿 Explore India's biodiversity with a click! Our virtual map reveals flora and fauna info, plus immersive 360-degree and VR experiences. 🌍 Dive in and discover the wonders of nature!
           </p>
 
-          <Link to='/projects' className='neo-brutalism-white neo-btn'>
+          <Link to='/map' className='neo-brutalism-white neo-btn'>
             Explore
           </Link>
         </div>

@@ -10,6 +10,9 @@ const NavBar=()=> {
                 <NavLink to="/about" className={({isActive})=> isActive? 'text-blue-500': 'text-black'}>
                     About
                 </NavLink>
+                <NavLink to="/map" className={({isActive})=> isActive? 'text-blue-500': 'text-black'}>
+                    Map
+                </NavLink>
                 <NavLink to="/contact" className={({isActive})=> isActive? 'text-blue-500': 'text-black'}>
                     Contact
                 </NavLink>

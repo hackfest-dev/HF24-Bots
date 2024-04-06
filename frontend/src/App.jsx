@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import InteractiveMap from './pages/map';
+import Booklet from './components/Booklet'; // Fix: Corrected the import statement
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/map" element={<InteractiveMap />} />
+          <Route path="/booklet" element={<Booklet />} />
         </Routes>
       </BrowserRouter>
     </div>

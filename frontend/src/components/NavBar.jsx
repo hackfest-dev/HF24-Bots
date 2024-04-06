@@ -13,6 +13,9 @@ const NavBar=()=> {
                 <NavLink to="/map" className={({isActive})=> isActive? 'text-blue-500': 'text-black'}>
                     Map
                 </NavLink>
+                <NavLink to="/booklet" className={({isActive})=> isActive? 'text-blue-500': 'text-black'}>
+                    Booklet
+                </NavLink>
                 <NavLink to="/contact" className={({isActive})=> isActive? 'text-blue-500': 'text-black'}>
                     Contact
                 </NavLink>

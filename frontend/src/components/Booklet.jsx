@@ -17,8 +17,8 @@ const Page = React.forwardRef((props, ref) => {
   return (
     <div className="page" ref={ref}>
       <div className="page-content">
-        <h2 className="page-header">Page header - {props.number}</h2>
-        <div className="page-image"> <CardDef animals={props.animals} /></div>
+        <h2 className="page-header ">{props.animal}</h2>
+        <div className="page-image "> <CardDef state={props.animal} /></div>
         <div className="page-text">{props.children}</div>
         <div className="page-footer">{props.number + 1}</div>
       </div>
@@ -65,11 +65,11 @@ class DemoBook extends React.Component {
         
         <HTMLFlipBook
           width={1000}
-          height={1000}
+          height={1400}
           minWidth={315}
           maxWidth={1000}
-          minHeight={420}
-          maxHeight={1350}
+          minHeight={600}
+          maxHeight={1450}
           size="stretch"
           maxShadowOpacity={0.5}
           showCover={true}
@@ -77,12 +77,16 @@ class DemoBook extends React.Component {
           onFlip={this.onPage}
           onChangeOrientation={this.onChangeOrientation}
           onChangeState={this.onChangeState}
-          className="html-book"
+          className="html-book mt-20 h-auto"
           ref={(el) => (this.flipBook = el)}
         >
           <PageCover>THE ENCYCLOPEDIA</PageCover>
           <Page number={1} animal={"lion"}>Lorem ipsum...</Page>
-          <Page number={2} animal={"hibiscus"}>Lorem ipsum...</Page>
+          <Page number={2} animal={"Camel"}>Lorem ipsum...</Page>
+          <Page number={3} animal={"tiger"}>Lorem ipsum...</Page>
+          <Page number={4} animal={"Deer"}>Lorem ipsum...</Page>
+          <Page number={5} animal={"elephant"}>Lorem ipsum...</Page>
+          <Page number={6} animal={"squirel"}>Lorem ipsum...</Page>
           <PageCover>THE END</PageCover>
         </HTMLFlipBook>
       </div>

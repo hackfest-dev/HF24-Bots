@@ -52,7 +52,7 @@ body:has(.card[data-color="green"]:hover) {
 
  .header {
    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
-   opacity: 0;
+   /* opacity: 0; */
    /* Initially invisible */
    transition: opacity 0.3s ease;
    /* Transition for opacity */

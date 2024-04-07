@@ -21,6 +21,7 @@ import Rohida from '../assets/images/rohida.png'
 import lily from '../assets/images/Lily.png'
 import hangul from '../assets/images/Hangul.png'
 import Gloriosa_Lily from '../assets/images/Gloriosa Lily.png'
+import Asset from "../assets/images/tiger.jpeg"
 
    
   const CardDef=(props)=>{
@@ -34,7 +35,8 @@ import Gloriosa_Lily from '../assets/images/Gloriosa Lily.png'
       <Card className="mt-6 w-80 h-80 flex-col">
         <CardHeader color="blue-gray" className="relative h-25">
           {props.state === "hibiscus" && (<img src={Hibiscus} alt="card-image" />) }
-          {props.state === "Camel" && (<img src={camel} alt="card-image" />) } 
+          {props.state === "Camel" && (<img src={camel} alt="card-image" />) }
+          {props.state === "tiger" && (<img src={Asset} alt="card-image" />) } 
           {props.state === "Deer" && (<img src={deer} alt="card-image" />) }
           {props.state === "elephant" && (<img src={Elephant} alt="card-image" />) }
           {props.state === "squirel" && (<img src={Squirel} alt="card-image" />) }
